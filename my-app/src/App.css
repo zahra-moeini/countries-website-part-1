@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+  }
+.light img{
+    width: 30px;
+}
+.navbar{
+        box-shadow: 2px 1px 10px 1px rgb(155 155 155 / 20%);
+    padding: 25px 60px 25px 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
