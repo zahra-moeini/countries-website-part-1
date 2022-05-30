@@ -1,30 +1,15 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./componnent/HomePage";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Header from "./components/Header";
+import Countries from "./components/Countries";
+import Filter from "./components/Filter";
 
-import "./App.css";
-import styled, { ThemeProvider } from 'styled-components';
-import { useDarkMode } from "./styles/useDarkMode";
-import { Toggle } from "./componnent/Toggle";
-import { GlobalStyles ,lightThem ,darktThem} from "./styles/globalStyles";
-
-const Container = styled.div``;
 function App() {
-  const [theme, toggleThem] = useDarkMode();
-  const themeMode=theme ==='light' ? lightThem :darktThem;
-
   return (
     <>
-    <ThemeProvider theme={themeMode}>
-
-      <Container>
-        <GlobalStyles />
-        <Toggle theme={theme} toggleThem={toggleThem}/>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </Container>
-    </ThemeProvider>
+      <Header />
+      <Filter />
+      <Countries />
     </>
   );
 }
