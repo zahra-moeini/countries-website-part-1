@@ -1,13 +1,16 @@
+
+
 const Header = () => {
+
   return (
     <>
       <header className="header">
         <div>
-          <h3>Where in the world?</h3>
+          <h1>Where in the world?</h1>
         </div>
+        <div  >
 
-        <div>
-          <i className="fas fa-moon"></i>Dark Mode
+          <i className="fas fa-moon" ></i>
         </div>
       </header>
     </>
